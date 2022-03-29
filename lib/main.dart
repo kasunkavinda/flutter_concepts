@@ -26,6 +26,10 @@ class Home extends StatelessWidget {
       body: Row(
         children: [
           Expanded(
+            child: Image.asset('assets/image1.jpg'),
+            flex: 4),
+          Expanded(
+            flex: 3,
             child: Container(
               color: Colors.cyan,
               child: const Padding(
@@ -34,19 +38,25 @@ class Home extends StatelessWidget {
               )
             ),
           ),
-          Container(
-              color: Colors.pink,
-              child: const Padding(
-                padding: EdgeInsets.all(50.0),
-                child: Text('1'),
-              )
+          Expanded(
+            flex: 2,
+            child: Container(
+                color: Colors.pink,
+                child: const Padding(
+                  padding: EdgeInsets.all(50.0),
+                  child: Text('1'),
+                )
+            ),
           ),
-          Container(
-              color: Colors.amber,
-              child: const Padding(
-                padding: EdgeInsets.all(50.0),
-                child: Text('1'),
-              )
+          Expanded(
+            flex: 1,
+            child: Container(
+                color: Colors.amber,
+                child: const Padding(
+                  padding: EdgeInsets.all(50.0),
+                  child: Text('1'),
+                )
+            ),
           ),
         ],
       ),
